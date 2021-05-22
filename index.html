@@ -1,47 +1,149 @@
-<html>
-    <head>
-        <title>Firefly Industry</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="hero">
-                <h1 class="title">Firefly</h1>
-                <h1 class="ind">INDUSTRY</h1>
-                <p>La tecnología ideal para tu empresa</p>
-                <h1 class="soon">Muy Pronto</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firefly Industry</title>
 
-                <hr>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icon.ico">
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Firefly Industry</a>
+        </div>
+          <div href="#" class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#home" class="nav__link">Inicio</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">Nosotros</a></li>
+              <li class="nav__item"><a href="#services" class="nav__link">Servicios</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Proyectos</a></li>
+              <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+            </ul>
+          </div>
+          
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+      </nav>
+    </header>
 
-                <p id="launch"></p>
+    <main class="l-main">
 
-            </div>
-        </header>
-    </body>
+      <section class="home bd-grid" id="home">
+        
+        <div class="home__data">
+          <h1 class="home__title">Tecnología<span class="home__man"> ideal</span> <br>para optimizar <br> <span class="home__title-color">la producción</span></h1>
+          <a href="https://wa.me/50433408985"class="button">Contactar</a>
+        </div>
 
-    <script>
-        var countDownDate = new Date("Jun 15, 2021 00:00:00").getTime();
+        <div class="home__social">
+          <a href="#" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://instagram.com/fireflyindustry" class="home__social-icon"><i class="bx bxl-instagram"></i></a>
+          <a href="https://facebook.com/fireflyindustry" class="home__social-icon"><i class="bx bxl-facebook"></i></a>
+        </div>
 
-        var x = setInterval(function() {
-            var now = new Date().getTime();
+        <div class="home__img">
+          <img src="Firefly Logo.png" alt="">
+        </div>
 
-            var distance = countDownDate - now;
+      </section>
+      
+      
+      <section class="about section" id="about">
+        <h2 class="section-title">Acerca de Nosotros</h2>
 
-            var days = Math.floor(distance/ (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (100 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        <div class="about__container bd-grid"> 
+          <div class="about__img">
+            <img src="about.jpg" alt="">
+          </div>
 
-            document.getElementById("launch").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+          <div>
+            <h2 class="about__subtitle">Conecta tu Empresa con El Mundo</h2>
+            <p class="about__text">En Firefly Industry nos especializamos en crear una conexión entre tu empresa y el resto del mundo, utilizamos tecnologías innovadoras para optimizar la producción de tu empresa, basados en el desarrollo de aplicaciónes, el IoT y el análisis de datos.</p>
+          </div>
+        </div>
+      </section>
 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("launch").innerHTML = "PRONTO";
-            }
-        }, 1000);
+
+      <section class="about section" id="services">
+        <h2 class="section-title">Nuestros Servicios</h2>
+
+        <div class="about__container bd-grid"> 
+          <div>
+            <h2 class="about__subtitle">Desarrollo</h2>
+            <p class="about__text">Utilizamos tecnologías de punta e innovadoras para desarrollar aplicaciones y servicios web que se acoplen a tu empresa y te mantenemos conectado y en constante analisís de todos tus servicios. </p>
+          </div>
+
+          <div class="about__img">
+            <img src="phonefly.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="about__container bd-grid"> 
+
+          <div class="about__img">
+            <img src="laptopfly.jpg" alt="">
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">Análisis</h2>
+            <p class="about__text">Mediante BIG DATA puedes tener acceso a toda la información de tus procedimientos, mejorando el monitoreo y la toma de decisiones y brindandote el completo control de tus datos. </p>
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">Automatización</h2>
+            <p class="about__text">Mediante modernos dispositivos de Hardware y con el uso de tecnologías IoT automatizamos los procedimientos de tu empresa manteniendote en contacto y controlando todas las areas de producción </p>
+          </div>
+
+          <div class="about__img">
+            <img src="sensorfly.jpg" alt="">
+          </div>
+          
+
+        </div>
+      </section>
 
 
-    </script>
+      <section class="contact section" id="contact">
+
+        <h2 class="section-title">Contacto</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form">
+            <input type="text" placeholder="n o m b r e" class="contact__input">
+            <input type="mail" placeholder="e m a i l" class="contact__input">
+            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+            <input type="button" value="Enviar" class="contact__button button">
+          </form>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+
+      <p class="footer__title">Firefly Industry</p>
+
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/fireflyindustry" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com/" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+      </div>
+
+      <p>&#169; 2021 Todos los derechos reservados.</p>
+
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
