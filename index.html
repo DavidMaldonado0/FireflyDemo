@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="icon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -38,7 +39,7 @@
 
       <section class="home bd-grid" id="home">
         
-        <div class="home__data">
+        <div class="home__data" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="home__title">Tecnología<span class="home__man"> ideal</span> <br>para optimizar <br> <span class="home__title-color">la producción</span></h1>
           <a href="https://wa.me/50433408985"class="button">Contactar</a>
         </div>
@@ -49,7 +50,7 @@
           <a href="https://facebook.com/fireflyindustry" class="home__social-icon"><i class="bx bxl-facebook"></i></a>
         </div>
 
-        <div class="home__img">
+        <div class="home__img" data-aos="fade-down" data-aos-duration="1000">
           <img src="Firefly Logo.png" alt="">
         </div>
 
@@ -59,7 +60,7 @@
       <section class="about section" id="about">
         <h2 class="section-title">Acerca de Nosotros</h2>
 
-        <div class="about__container bd-grid"> 
+        <div data-aos="fade-right" data-aos-duration="3000" class="about__container bd-grid"> 
           <div class="about__img">
             <img src="about.jpg" alt="">
           </div>
@@ -75,7 +76,7 @@
       <section class="about section" id="services">
         <h2 class="section-title">Nuestros Servicios</h2>
 
-        <div class="about__container bd-grid"> 
+        <div data-aos="fade-up" data-aos-duration="3000" class="about__container bd-grid"> 
           <div>
             <h2 class="about__subtitle">Desarrollo</h2>
             <p class="about__text">Utilizamos tecnologías de punta e innovadoras para desarrollar aplicaciones y servicios web que se acoplen a tu empresa y te mantenemos conectado y en constante analisís de todos tus servicios. </p>
@@ -86,7 +87,7 @@
           </div>
         </div>
 
-        <div class="about__container bd-grid"> 
+        <div data-aos="fade-up" data-aos-duration="3000" class="about__container bd-grid"> 
 
           <div class="about__img">
             <img src="laptopfly.jpg" alt="">
@@ -97,7 +98,7 @@
             <p class="about__text">Mediante BIG DATA puedes tener acceso a toda la información de tus procedimientos, mejorando el monitoreo y la toma de decisiones y brindandote el completo control de tus datos. </p>
           </div>
 
-          <div>
+          <div data-aos="fade-up" data-aos-duration="3000">
             <h2 class="about__subtitle">Automatización</h2>
             <p class="about__text">Mediante modernos dispositivos de Hardware y con el uso de tecnologías IoT automatizamos los procedimientos de tu empresa manteniendote en contacto y controlando todas las areas de producción </p>
           </div>
@@ -145,5 +146,9 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
