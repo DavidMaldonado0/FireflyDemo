@@ -412,7 +412,7 @@ img {
   }
 
   .home__img {
-    width: 457px;
+    width: 350px;
     bottom: 15%;
   }
 
@@ -448,7 +448,7 @@ img {
   }
 
   .home__img {
-    width: 550px;
-    right: 10%;
+    width: 500px;
+    right: 3%;
   }
 }
