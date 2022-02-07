@@ -4,7 +4,7 @@ Landing page for fireflyindustry.com
 
 ### Description
 
-TDiseño de sitio web para la Start-Up Firefly Industry[fireflyindustry.com](https://fireflyindustry.com/) Company dedicated to the development of agricultural technology and the automation of processes through IoT.
+Web Design for Start-Up Firefly Industry[fireflyindustry.com](https://fireflyindustry.com/) Company dedicated to the development of agricultural technology and the automation of processes through IoT.
 
 Firefly Industry was founded in 2021 by software engineer David Maldonado (Honduras), veterinary zootechnist Luis Rivera (Colombia) and Automation Technician Manuel Torres (Honduras).
 
